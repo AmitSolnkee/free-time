@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+.Navigation-bar {
+  max-width: 100%;
+  background-color: #ef9273;
+  color: #fef9f8;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Nav-logo {
+  font-size: 1.3em;
+  font-weight: 600;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.Nav-menu li {
+  list-style: none;
+  font-size: 1em;
+  font-weight: 500;
+  margin-right: 1.2em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Nav-menu a {
+  text-decoration: none;
+  color: #fef9f8;
 }
 
-.App-link {
-  color: #61dafb;
+.Nav-menu a:hover {
+  color: #e0e0e0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.img-section {
+  background-color: #ef9273;
+  
+}
+
+.img-shadow {
+ box-shadow:#ef9273 -15px 15px;
+ height: 60%;
+ border-radius: 5%;
+}
+.description-section button{
+  background-color: #ef9273;
+  border: none;
+}
+
+.description-section button:hover{
+  border: #ef9273 1.5px solid !important;
+  background-color: #e0e0e0;
+  color: #ef9273 !important;
+}
+.envelope{
+  transition: width 1s ease-out;
+}
+.envelope:hover{
+  width: 99%;
+}
+@media(max-width : 768px){
+  .description-section p {
+    text-align: justify;
   }
 }
